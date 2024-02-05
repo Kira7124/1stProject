@@ -1,0 +1,262 @@
+@charset "EUC-KR";
+
+.productWrite-bg {
+				    --bs-card-spacer-y: 1rem;
+				    --bs-card-spacer-x: 1rem;
+				    --bs-card-title-spacer-y: 0.5rem;
+				    --bs-card-border-width: 0;
+				    --bs-card-border-color: rgba(0, 0, 0, 0.125);
+				    --bs-card-border-radius: 1rem;
+				    --bs-card-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+				    --bs-card-inner-border-radius: 1rem;
+				    --bs-card-cap-padding-y: 0.5rem;
+				    --bs-card-cap-padding-x: 1rem;
+				    --bs-card-cap-bg: #fff;
+				    --bs-card-cap-color: ;
+				    --bs-card-height: ;
+				    --bs-card-color: ;
+				    --bs-card-bg: #fff;
+				    --bs-card-img-overlay-padding: 1rem;
+				    --bs-card-group-margin: 0.75rem;
+				    position: relative;
+				    display: flex;
+				    width: 100%;
+				    flex-direction: column;
+				    height: var(--bs-card-height);
+				    word-wrap: break-word;
+				    background-color: var(--bs-card-bg);
+				    background-clip: border-box;
+				    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+				    border-radius: var(--bs-card-border-radius);
+				    box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;
+				    max-height: 800px;
+				    overflow: auto;
+				   }
+
+.productWrite-bg::-webkit-scrollbar {
+						    width: 10px;
+						    border-radius: 0 20px 20px 0;
+						  } 
+
+.productWrite-bg::-webkit-scrollbar-thumb {
+							    background-color: #2f3542;
+							    border-radius: 10px;
+							    background-clip: padding-box;
+							    border: 2px solid transparent;
+							    }
+
+.productWrite-bg::-webkit-scrollbar-track {
+							    background-color: #fff;
+							    border-radius: 0 50px 50px 0;
+							    box-shadow: inset 0px 0px 5px white;
+							    }
+
+#product-row {
+				margin-right: 100px;
+			    margin-top: 100px;
+			    margin-left: 310px;
+			    background-color: #fff;
+			    height: auto;
+	      		} 
+
+
+
+table {
+	margin: 0 20px;
+	height: 750px;
+}
+
+#th {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#bs {
+	 text-align: left;
+     padding: 0.75rem 1.5rem;
+     text-transform: capitalize;
+     letter-spacing: 0px;
+	 }
+
+.writeForm {
+			text-align: left;
+		    padding: 0.75rem 1.5rem;
+		    letter-spacing: 0px;
+		    border-bottom: 1px solid #e9ecef;
+		    height: 60px;
+		    width: 300px;
+			}
+
+#reg, #up,#mo, #na, #co, #cap,
+#op1, #op2, #pr {
+    float: left;
+    width: 300px;
+    font-size: 15px;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin: 0.8em;
+}
+
+#sub{
+			float: left;
+		    width: 300px;
+		    font-size: 15px;
+		    border: 1px solid skyblue;
+		    border-radius: 15px;
+		    outline: none;
+		    padding-left: 10px;
+		    margin: 0.8em;
+}
+
+#cont{
+	float: left;
+    font-size: 15px;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin: 0.8em;
+    resize: none;
+}
+
+input[type='file']{
+					display: none;
+}
+
+.input-file-button{
+					  padding: 6px 25px;
+					  background-color:#63B3ED;
+					  border-radius: 4px;
+					  color: white;
+					  cursor: pointer;
+					  float:left;
+					}
+					
+#file-name-display {
+				    float:left;
+				    color:#999; /* 파일명 스타일을 조절하세요 */
+				    margin-left: 20px;
+				    margin-top: 5px;
+				    
+					}
+
+input[type="text" i] {
+    writing-mode: horizontal-tb !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+     
+}
+
+.writeForm #input1{
+					     float: left;
+					     width: 450px;
+					     font-size: 15px;
+						 border: 1px solid skyblue;
+						 border-radius: 15px;
+						 outline: none;
+						 padding-left: 10px;
+					   }
+
+.writeForm #input4{
+			       float: left;
+			       width: 450px;
+			       font-size: 15px;
+				   border: 1px solid skyblue;
+				   border-radius: 15px;
+				   outline: none;
+				   padding-left: 10px;
+				   margin-bottom: 20px;
+				  }
+
+.writeForm .select-td{
+						margin-top: 20px;
+					  }
+
+					   
+.writeForm #input3{
+                    float: none;
+                    position: relative;
+                    width: 140px;
+                    height: 25px;
+                    font-size: 15px;
+                    border: 1px solid skyblue;
+                    border-radius: 15px;
+                    outline: none;
+                    padding-left: 10px;
+                  }
+                  
+.writeForm #hyphen{
+                    float: none;
+                    position: relative;
+                    
+                  }
+                  
+.writeForm #hyphen1{
+                    float: none;
+                    position: relative;
+                   
+                  }
+
+.Announcement-img{
+				   margin-top: 30px;
+				   text-align: center;
+				   width: 100%;
+				   overflow: auto;
+}                  
+
+.Announcement-img img{	
+					   width: 70%;
+					   height: auto;
+}
+
+.select-td{
+			display: flex;
+			 flex-direction: column;
+}
+
+#button {
+	float:right;
+    width: 120px;
+    background-color: #63B3ED;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    
+}

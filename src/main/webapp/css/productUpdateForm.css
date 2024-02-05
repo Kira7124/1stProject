@@ -1,0 +1,116 @@
+@charset "EUC-KR";
+
+.productUpdate-bg {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: rgba(0, 0, 0, 0.125);
+    --bs-card-border-radius: 1rem;
+    --bs-card-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+    --bs-card-inner-border-radius: 1rem;
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: #fff;
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+#product-row {
+				margin-right: 100px;
+			    margin-top: 100px;
+			    margin-left: 310px;
+			    background-color: #fff;
+	      		} 
+
+
+
+table {
+	margin: 0 20px;
+}
+
+#th {
+    text-align: center;
+    padding: 0.75rem 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.writeForm {
+	text-align: left;
+    padding: 0.75rem 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    border-bottom: 1px solid #e9ecef;
+    height: 60px;
+}
+
+.writeForm #reg, #up, #mo, #na, #co, #cap,
+#op1, #op2, #pr, #im {
+    float: left;
+    width: 300px;
+    font-size: 15px;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 10px;
+    margin: 0.8em;
+}
+
+input[type="text" i] {
+    writing-mode: horizontal-tb !important;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+input {
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+#button {
+    width: 120px;
+    background-color: #63B3ED;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}

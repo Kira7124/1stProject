@@ -1,0 +1,1525 @@
+/* 전체페이지 */
+
+
+#wrap{
+      width:100%;
+      height: 100%; 
+      position: relative;
+      overflow-x: hidden;
+      overflow: auto;
+      }
+
+#wrap::-webkit-scrollbar {
+						    width: 10px;
+						    border-radius: 0 20px 20px 0;
+						  } 
+
+#wrap::-webkit-scrollbar-thumb {
+							    background-color: #2f3542;
+							    border-radius: 10px;
+							    background-clip: padding-box;
+							    border: 2px solid transparent;
+							    }
+
+#wrap::-webkit-scrollbar-track {
+							    background-color: #fff;
+							    border-radius: 0 50px 50px 0;
+							    box-shadow: inset 0px 0px 5px white;
+							    }
+
+/* 배경이미지 */
+.bg{
+	width: 100%;
+    height: 430px;
+    position: absolute;
+    background-image: url(https://demos.creative-tim.com/argon-dashboard-chakra/static/media/admin-background.5e664491.png);
+    background-size: cover;
+    top: 0px;
+    }
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#scrollBtn:hover {
+    background-color: #0056b3;
+}
+
+
+/* 로그인페이지 전체부분 */
+#login_pg {
+		    width: 100vw;
+		    height: 100vh;
+		    position: relative;
+		   }
+
+
+/* 동영상 부분 */
+#play_bg {
+	      top: 0;
+	      padding: 0;
+	      width: 100%;
+	      height: 100%;
+	      overflow: hidden;
+	      position: fixed;
+	      object-fit: cover;
+		  }
+
+/* 로그인 로고 부분 */
+.login-logo{
+			position: absolute;
+		    justify-content: center;
+		    text-align: center;
+			align-items: center;
+			background-color: aqua;
+			}
+
+.login-logo-bt{
+			    justify-content: center;
+				align-items: center;
+				position: absolute;
+				z-index: 1; /* 높은 값으로 설정하여 다른 요소 위에 표시 */
+			   }
+/* 로그인입력창 전체 */
+.login-form-bg {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 100%;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    background: rgba(0, 153, 255, 0.6);
+				}
+/* 로그인 입력창 부분 */				
+.login-form{
+			background: rgba(255, 255, 255, 0.8);
+			width: 500px;
+			height: 500px;
+			border-radius: 15px;
+			}
+
+.join-form{
+			background: rgba(255, 255, 255, 0.8);
+			width: 500px;
+			height: 700px;
+			border-radius: 15px;
+			}
+
+
+
+.login-title{
+			 width: 100%;
+			 height: 70px;
+			 display: block;
+			 border-radius: 15px 15px 0 0;
+			 }
+.join-title{
+			 width: 100%;
+			 height: 50px;
+			 display: block;
+			 border-radius: 15px 15px 0 0;
+			}
+.join-title h4{
+				text-align: center;
+				font-size: 35px;
+			   }
+
+.login-title h4{
+				text-align: center;
+				font-size: 35px;
+		        }
+
+.login-input {
+			    width: 100%;
+			    height: 250px;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+			  }
+.updatePassword-input{
+					  width: 100%;
+				      height: 250px;
+				      display: flex;
+				      flex-direction: column;
+				      align-items: center;
+			    	  justify-content: center;
+			    	  margin-top: 50px;
+					  }
+
+.updatePassword-input p{
+						width: 400px;
+						text-align: left;
+						font-size: 20px;
+						margin: 0;
+						font-weight: 900;
+						margin-bottom: 10px;
+						margin-top: 10px;
+						}
+
+.updatePassword-input span{
+							text-align: left;
+						   }
+
+.updatePassword-input span input{
+								  width: 400px;
+								  height: 40px;
+								  border-radius: 10px;
+								  outline: none;
+								  border: 1px solid #6c757d;	
+							     }
+
+.join-input{
+			width: 100%;
+		    height: 600px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+			}				
+
+.login-input p{
+				width: 400px;
+				text-align: left;
+				font-size: 20px;
+				margin: 0;
+				font-weight: 900;
+				margin-bottom: 10px;
+				margin-top: 10px;
+				} 
+
+.join-input p{
+			  width: 400px;
+			  text-align: left;
+			  font-size: 20px;
+			  margin: 0;
+			  font-weight: 900;
+			  margin-bottom: 10px;
+			  }
+
+.login-input span {
+					text-align: left;
+				   }
+.login-input span input{
+						width: 400px;
+						height: 40px;
+						border-radius: 10px;
+						outline: none;
+						border: 1px solid #6c757d;			
+						}
+
+
+#join-name{
+			width: 400px;
+			margin: 0;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+			padding-left: 10px;
+		   }
+
+#join-id{
+		 width: 400px;
+		 margin: 0;
+		 border-radius: 10px;
+		 border: none;
+		 outline: none;
+		 padding-left: 10px;
+	     }
+
+#check-id{
+		  border-radius: 10px;
+		  background-color: #000;
+		  color: #fff;
+		  font-size: 15px;
+		  cursor: pointer;
+		  }
+	     
+#join-pw{
+		  width: 400px;
+		  margin: 0;
+		  border-radius: 10px;
+		  border: none;
+		  outline: none;
+		  padding-left: 10px;
+		  }
+#join-birth{
+			width: 400px;
+			margin: 0;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+			padding-left: 10px;
+			}
+#join-phoneNum{
+			   width: 400px;
+			   margin: 0;
+			   border-radius: 10px;
+			   border: none;
+			   outline: none;
+			   padding-left: 10px;
+			   }
+
+#join_postcode{
+			   width: 200px;
+			   margin: 0;
+			   border-radius: 10px;
+			   border: none;
+			   outline: none;
+			   padding-left: 10px;
+			   }			   
+
+#join_button{
+			 width: 100px;
+			 background: rgba(0,0,0,0);
+			 border-radius: 10px;
+			 border: none;
+			 outline: none;
+			 cursor: pointer;
+			 }
+
+#join_address{
+			  width: 400px;
+			  margin: 0;
+			  border-radius: 10px;
+			  border: none;
+			  outline: none;
+			  margin-top: 5px;
+			  padding-left: 10px;
+			  }
+
+#join_detailAddress{
+					width: 200px;
+					margin: 0;
+					border-radius: 10px;
+					border: none;
+					outline: none;
+					margin-top: 5px;
+					padding-left: 10px;
+					}
+
+#join_extraAddress{
+				   width: 200px;
+				   margin: 0;
+				   border-radius: 10px;
+				   border: none;
+				   outline: none;
+				   margin-top: 5px;
+				   padding-left: 10px;
+				   }
+
+#join-email{
+			width: 400px;
+			margin: 0;
+			border-radius: 10px;
+			border: none;
+			outline: none;
+			padding-left: 10px;
+			}
+
+.login-bt{
+			width: 400px;
+			height: 50px;
+			font-size: 17px;
+			text-align: center;
+			margin-top: 25px;
+			border-radius: 15px;
+			background-color: #000;
+			color: #fff;
+			cursor: pointer;
+		   }
+
+#updatePasswordBtn{
+					width: 400px;
+					height: 50px;
+					font-size: 17px;
+					text-align: center;
+					margin-top: 25px;
+					border-radius: 15px;
+					background-color: #000;
+					color: #fff;
+					cursor: pointer;
+					}
+
+.certNum{
+			width: 150px;
+			height: 40px;
+			font-size: 17px;
+			text-align: center;
+			margin-top: 25px;
+			border-radius: 10px;
+			background-color: #000;
+			color: #fff;
+			cursor: pointer;
+}
+
+.id-find-btn{
+			 background: rgba(255, 255, 255, 0);
+			 border: none;
+			 font-size: 16px;
+			 font-weight: 500;
+			 margin-right: 20px;
+			 cursor: pointer;
+		     }
+
+.pass-find-btn{
+				background: rgba(255, 255, 255, 0);
+			 	border: none;
+				font-size: 16px;
+			 	font-weight: 500;
+			 	cursor: pointer;
+			   }
+		 
+.login-join{
+			width: 100%;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    margin: 0;
+			}
+
+.login-join p{
+				margin-right: 15px;
+				font-weight: 700;
+				margin-top: 15px;
+			  }
+
+.login-join input{
+				  background: rgba(255, 255, 255, 0);
+				  border: 0; 
+				  cursor: pointer;
+				  font-weight: 900;
+				  }
+
+
+
+#button_area {
+			  background: rgba(255, 255, 255, 0);
+			  border-radius: 10px;
+			  padding: 10px;
+			  width: 100%;
+			  display: flex;
+			  justify-content: center;
+			}
+
+
+#login-kakao{
+			  width: 60px;
+			  height: 60px;
+			  margin-right: 30px;
+			 }
+
+#login-naver{
+			 width: 50px;
+			 height: 50px;
+			 }
+
+/* 메인 */
+.main{
+      width: 260px; 
+      height: 860px;
+      margin-top: 33px; 
+      margin-left: 16px; 
+      float: left;
+      position: fixed;
+      background-color: #fff;
+      border-radius: 40px;
+      box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;
+      }
+
+
+
+/* 로고 */
+.logo{
+      margin: auto;
+      width: 130px;
+      }
+
+/* 메인메뉴 */
+.main_mn{
+        position: relative;
+        width: 200px; 
+        height: 500px; 
+        margin: auto; 
+        margin-top: 10px;
+        }
+
+
+/* 메인메뉴(홈) */
+.mn_box{
+          margin-top: 10px;
+          width: 190px;
+          height: 40px;
+          border-radius: 10px;
+          transition: box-shadow 0.3s ease;
+          }
+
+
+/* 메뉴이미지 배경 */
+.mn_icon{
+          float: left;
+          width:30px;
+          height: 30px;
+          border-radius: 20%;
+          transition: background-color 0.3s ease;
+        }
+
+/* 메뉴이미지 */
+.mn_box img{
+              margin-top: 3px;
+              margin-left: 3px;
+              filter: invert(44%) sepia(11%) saturate(3408%) hue-rotate(168deg) brightness(101%) contrast(86%);
+              transition: filter 0.3s ease;
+            }
+
+
+
+/* 메뉴 텍스트 */
+.clickable-span {
+                float: left;
+                font-size: 15px;
+                color: #A0AEC0;
+                margin-left: 20px;
+                margin-top: 7px;
+                font-weight: 900;
+                }
+
+
+/* 고객센터 텍스트 */
+.mn_center h2{
+              margin-top: 30px;
+              margin-bottom: 30px;
+              font-size: 20px
+			  }
+
+/* 메뉴 하단부분 */
+.footer{
+        width: 200px; 
+        height: 130px; 
+        margin: auto;
+        margin-top: 20px;
+        }
+        
+.footer h1{
+		   font-size: 20px;
+		  }
+  
+.footer p{
+           font-size: 15px;
+		  }
+
+/* 마이페이지 부분 */
+.mypage{
+		float: right;
+        position: relative;
+        height: 40px;
+        
+
+        align-items: center;
+        margin-top: 17px;
+        margin-right: 30px;
+		}
+
+
+/* 마이페이지 아이콘 부분 */
+.mypage_bt_icon{
+                float: left;
+                filter: invert(96%) sepia(0%) saturate(7500%) hue-rotate(271deg) brightness(102%) contrast(104%);
+              }
+
+/* 로그인 */
+.login{
+        float: right;
+        position: relative;
+        width: 90px;
+        text-align: center;
+        height: 40px;
+		margin-right: 40px;
+        align-items: center;
+      }
+
+
+/* 로그인 텍스트 부분 */
+.login_bt_text{
+                float: left;
+                width: 100%;
+                margin-right: 10px;
+                font-size: 20px;
+                font-weight: 900;
+                margin-top: 15px;
+                color: white;
+              }
+
+.logout_bt{
+		   cursor: pointer;
+		   }
+
+.sm{
+	width: 100px;
+	display: none;
+	border: none;
+	background-color: rgba(255,0,0,0);
+	color: #fff;
+	cursor: pointer;
+	font-size: 17px;
+	font-weight: 900;
+	position: absolute;
+    margin-top: 50px;
+	}
+
+
+ /* 검색창 */
+ .search{
+	        float: right; 
+	        position: relative; 
+	        background-color: white;
+	        width: 185px; 
+	        height: 30px; 
+	        border-radius: 10px; 
+	        margin-right: 35px;
+	        margin-top: 15px;
+        }
+
+/* 검색창 TEXT */
+.search input{outline: none;}
+
+/* 검색 내용 전송버튼 */
+.btn_submit{
+            background-image: url('../icon/검색.png');
+            background-position:  0px 0px;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 30px;
+            border: none;
+            margin-top: 2px;
+            border-radius: 0 10px 10px 0;
+            cursor:pointer;
+            outline: 0;
+            background-color:transparent;
+          }
+
+
+/* 메인이미지 */
+#main_img{
+          position: absolute;
+          width: 1500px; 
+          height: 930px; 
+          margin-top: 100px; 
+          margin-left: 310px;
+          border-radius: 20px;
+          box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;
+          background-color: #fff;
+          }
+
+#main_img .img_area{ 
+                    width: 1500px; 
+                    height: 510px; 
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 20px 20px 0 0;
+                    }
+#main_img .imgs li{
+                    width: 1500px; height: 1500px;
+                  }
+#main_img .imgs li:nth-child(1){ 
+                                position:absolute; left: 0; top:0;
+                                }
+#main_img .imgs li:nth-child(2){
+                                position:absolute; left: 100%; top:0; 
+                                }
+#main_img .imgs li:nth-child(3){ 
+                                position:absolute; left: 200%; top:0;
+                                }
+#main_img .imgs li:nth-child(4){ 
+                                position:absolute; left: 300%; top:0;
+                                }
+                                
+                                
+
+/* 메인이미지 버튼부분 */
+#main_img .btns{
+                position: absolute; 
+                left: 50%; 
+                margin-left:-35px;
+                bottom:30px;
+                z-index: 5000;
+                }
+#main_img .btns > li{ 
+                      float: left;
+                      margin-right: 10px; 
+                      width: 10px; 
+                      height: 10px;  
+                      cursor: pointer;
+                      border-radius: 50%; border: 1px solid #000;
+                    }
+
+#main_img .btns li.active {
+                            background-color: #ff0000; /* 원하는 색상으로 변경 */
+                            color: #fff; /* 텍스트 색상 변경 */
+                          }
+
+
+/* 중고매입 테이블 부분 */
+.row {
+	    display: flex;
+	    flex-wrap: wrap;
+	    margin-top: 100px;
+	    margin-left: 310px;
+	    background-color: #fff;
+      } 
+
+.product-container{
+					width: 15%;
+					height: 330px;
+					margin-top:80px;
+					margin-left: 20px;
+					text-align: center;
+					box-shadow: rgba(0, 0, 0, 0.05) 14px 14px 14px;	
+				   }
+
+.pd_list{
+		 width: 100%;
+		}
+
+
+.pd_img{
+		width: 200px;
+		height: 200px;;
+	    }
+
+.pd-title{
+		   float:left;
+		   margin-top: 8px;
+		  }
+
+.pd-subtitle{
+			 float:left;
+			 }
+
+.pd-subtitle {
+			  position: relative;
+			  }
+
+.sm {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+  	 }
+
+.sm.show{
+		 display: block;
+		 }
+.detail_img{
+			display: inline-block;
+			vertical-align: top;
+			margin: 0;
+			margin-top: 200px;
+			margin-left: 100px
+			}
+					  
+.sub_op{
+		display: inline-block;
+	    vertical-align: top;
+	    margin: 0;   
+	    margin-left: 200px;
+	    margin-top: 200px;	
+		}
+
+
+
+#page_control{
+			  text-align: center;
+			  width: 100%;
+			 }
+			 
+
+/* 하단이미지 부분 */
+#main_img .footer_imgs{
+                        width: 1280px;
+                        height: 300px;
+                        margin-top: 60px;
+                        margin-left: 110px;
+                      }
+
+  
+                      
+#map {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center; /* 중앙 정렬 */
+	  margin-left: 50px;
+	  width: 45%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+	  height: 500px;
+	  margin-top: 150px;
+	  }	
+
+#center-container{
+				   display: flex;
+				   flex-direction: column;
+				   /* align-items: center; */ /* 중앙 정렬 */
+				   margin-left: 50px;
+				   width: 45%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+				   height: 500px;
+				   margin-top: 100px;
+				  }
+
+#sale-img{
+		  display: inline-block;
+		  vertical-align: top;
+		  margin: 0;
+		  width:500px;
+		  height:500px;
+		  margin-top: 150px;
+		  margin-left: 100px;
+		  }
+
+#saleVisit-img{
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center; /* 중앙 정렬 */
+			    margin-left: 50px;
+			    width: 45%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+			    height: 500px;
+			    margin-top: 150px;
+			   }
+
+#ReviewCont-img{
+				display: flex;
+			    flex-direction: column;
+			    align-items: center; /* 중앙 정렬 */
+			    margin-left: 50px;
+			    width: 45%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+			    height: auto;
+			    margin-top: 100px;
+}
+
+#ReviewCont-img img{
+					width: 100%;
+					height: auto;
+					}
+
+#saleVisitForm-container{
+						  display: flex;
+						  flex-direction: column;
+						  align-items: center; /* 중앙 정렬 */
+						  margin-left: 50px;
+						  width: 45%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+						  height: 500px;
+						  margin-top: 150px;
+						 }
+
+#saleDeliveryForm-container{
+						  display: flex;
+						  flex-direction: column;
+						  align-items: center; /* 중앙 정렬 */
+						  margin-left: 50px;
+						  width: 45%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+						  height: 500px;
+						  margin-top: 100px;
+						 }
+	 
+#delete_bt{
+			background-color: #fff;
+			border: none;
+			cursor: pointer;
+		   }
+
+
+.center-write {
+				width:100%;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    margin: 0;
+			    width: calc(50% - 50px); /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+			    height: 350px;
+			    margin-left: 50px;
+			    margin-top: 90px;
+				}
+
+.purchaseOrder-write{
+						display: flex;
+					    flex-direction: column;
+					    align-items: center;
+					    margin: 0;
+					    width: 48%; /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+					    height: 700px;
+					    margin-left: 50px;
+					    margin-top: 90px;
+					 }
+
+
+.review-write{
+				display: flex;
+				height: auto;
+			    flex-direction: column;
+			    align-items: center;
+			    margin: 0;
+			    width: calc(50% - 50px); /* 50%에서 여백 50px을 빼서 정확한 너비 계산 */
+			    height: auto;
+			    margin-left: 100px;
+			    margin-top: 90px;
+
+				}				
+
+.review-name{
+			 border-top: 1px solid #e9ecef;
+			 margin-bottom: 100px;
+			 }
+
+				
+.review-content-detail{
+						width: 500px;
+						height: 300px;
+						overflow: auto;
+					   }
+
+.review-content-detail::-webkit-scrollbar {
+										    width: 10px;
+										    border-radius: 0 20px 20px 0;
+										   }
+
+.review-content-detail::-webkit-scrollbar-thumb {
+												    background-color: #2f3542;
+												    border-radius: 10px;
+												    background-clip: padding-box;
+												    border: 2px solid transparent;
+												 }
+
+.review-content-detailp::-webkit-scrollbar-track {
+												    background-color: #fff;
+												    border-radius: 0 50px 50px 0;
+												    box-shadow: inset 0px 0px 5px white;
+												  }
+
+.saledetail-write{
+				  display: inline-block;
+				  vertical-align: top;
+				  margin: 0;
+				  width: 700px;
+				  height: 350px;
+				  margin-left: 150px;
+				  margin-top: 50px;	
+				  }
+
+
+.center-title{
+			  text-align: center;
+			  padding: 0.75rem 1.5rem;
+			  text-transform: capitalize;
+			  letter-spacing: 0px;
+			  }
+			  
+.purchaseOrder-title{
+					  text-align: center;
+					  padding: 0.75rem 1.5rem;
+					  text-transform: capitalize;
+					  letter-spacing: 0px;
+					  justify-content: space-between;
+					  align-items: center;
+					 }
+.hidden {
+		  display: none;
+		 }
+
+
+/* 토글 버튼 스타일 조정 */
+#toggleButton {
+				order: 1; /* 토글 버튼의 순서를 우측에 위치하도록 변경 */
+				margin-left: 10px; /* 자동으로 왼쪽 마진을 주어 우측에 배치 */
+				background-color: #fff;
+				border: none;
+			   }
+			   
+			   
+#toggleButton2 {
+				order: 1; /* 토글 버튼의 순서를 우측에 위치하도록 변경 */
+				margin-left: 10px; /* 자동으로 왼쪽 마진을 주어 우측에 배치 */
+				background-color: #fff;
+				border: none;
+				margin-bottom: 30px;
+			   }
+
+
+.saledetail-title{
+				  text-align: center;
+				  padding: 0.75rem 1.5rem;
+				  text-transform: capitalize;
+				  letter-spacing: 0px;
+				  border-bottom: 1px solid #e9ecef;
+				  }
+
+.saledetail-title-font{
+					   font-size: 30px;
+					   }
+					   
+
+
+			  
+.center-detail{
+			   width: 100%;
+			   text-align: left;
+			   padding: 0.75rem 1.5rem;
+			   text-transform: capitalize;
+			   letter-spacing: 0px;
+			   height: auto;
+			   margin-bottom: 20px;
+			   }
+			   
+.purchaseOrder-detail{
+						width: 100%;
+					   text-align: left;
+					   padding: 0.75rem 1.5rem;
+					   text-transform: capitalize;
+					   letter-spacing: 0px;
+					   height: auto;
+					   margin-bottom: 80px;   
+					   }
+			   
+.center-detail:first-child{
+							border-top: 1px solid #e9ecef;
+						  }
+
+.center-detail1{
+			   width: 100%;
+			   text-align: left;
+			   padding: 0.75rem 1.5rem;
+			   text-transform: capitalize;
+			   letter-spacing: 0px;
+			   height: 130px;
+			   }
+
+
+
+.purchaseOrder-detail #input1{
+							  float: right;
+						      width: 450px;
+						      font-size: 15px;
+							  border: 1px solid skyblue;
+							  border-radius: 15px;
+							  outline: none;
+							  padding-left: 10px;
+							  }
+
+.purchaseOrder-detail #input2{
+							  float: right;
+						      width: 450px;
+						      font-size: 15px;
+							  border: 1px solid skyblue;
+							  border-radius: 15px;
+							  outline: none;
+							  padding-left: 10px;
+							  }
+
+
+.purchaseOrder-detail #input3{
+							  float: right;
+						      width: 450px;
+						      font-size: 15px;
+							  border: 1px solid skyblue;
+							  border-radius: 15px;
+							  outline: none;
+							  padding-left: 10px;
+							  }
+
+#categorySelect{
+				float: left;
+		        width: 300px;
+		        font-size: 15px;
+			    border: 1px solid skyblue;
+			    border-radius: 15px;
+			    outline: none;
+			    padding-left: 10px;
+				}
+
+.purchaseOrder-img{
+					width: 300px;
+					height: 300px;
+				   }
+
+.cart-img{
+		  width: 100px;
+		  height: auto;
+		  }
+
+.order-notice-table{
+					margin-top: 90px;
+					width: 48%;
+				    height: 500px;
+				    text-align: center;
+				    display: flex; /* 레이아웃을 위해 flexbox 사용 */
+				    flex-wrap: wrap; /* 필요시 항목을 다음 줄로 래핑 */
+					}
+.order-notice-title{
+					width: 100%;
+					}
+
+
+.order-notice{
+			  width: 50%;
+			  margin-right: 40px;
+			  }
+
+.order-notice1{
+				width: 40%;
+				margin-top: 20px;
+				
+			   }
+
+.lental-notice1{
+				width: 38%;
+				margin-top: 20px;
+			    }
+
+.purchase-container {
+				      display: flex;
+				      justify-content: space-between;
+					 }
+
+.order-pay {
+		    width: 100%;
+		    margin-top: 50px;
+			}
+
+/* #input2{
+	     float: right;
+	     width: 450px;
+	     height: 90px;
+	     font-size: 15px;
+		 border: 1px solid skyblue;
+		 border-radius: 15px;
+		 outline: none;
+		 padding-left: 10px;
+		 vertical-align: text-top;
+		 resize: none;
+		 margin-top: 20px;
+		 margin-bottom: 20px;
+	    } */
+
+#input-req{
+			 float: left;
+		     width: 450px;
+		     height: 90px;
+		     font-size: 15px;
+			 border: 1px solid skyblue;
+			 border-radius: 15px;
+			 outline: none;
+			 padding-left: 10px;
+			 vertical-align: text-top;
+			 resize: none;
+			 margin-top: 20px;
+			 margin-bottom: 20px;
+			}	    
+
+#input2::placeholder{
+					  position: absolute;
+					  top: 0;
+					 }
+
+#sample6_postcode{
+				  width: 350px;
+				  border: 1px solid skyblue;
+				  border-radius: 15px;
+				  outline: none;
+				  padding-left: 10px;
+				  margin-bottom: 5px;
+				  margin-top: 20px;
+				 }
+
+#sample6_address{
+				 width: 455px;
+				 border: 1px solid skyblue;
+				 border-radius: 15px;
+				 outline: none;
+				 padding-left: 10px;
+				 margin-bottom: 5px;
+				 }
+#sample6_detailAddress{
+						width: 260px;
+						border: 1px solid skyblue;
+						border-radius: 15px;
+						outline: none;
+						padding-left: 10px;
+					   }
+
+#sample6_extraAddress{
+					  border: 1px solid skyblue;
+					  border-radius: 15px;
+					  outline: none;
+					  padding-left: 10px;
+					  margin-bottom: 20px;
+					  }
+
+#sample6_button{
+				width: 100px;
+				background-color: #63B3ED;
+				border-radius: 15px;
+				font-size: 16px;
+				color: #fff;
+				border: 1px solid skyblue;
+				cursor: pointer;
+				text-align: center;
+				}
+
+#center-app{
+			width: 100px;
+			float: right;
+			background-color: #63B3ED;
+			border-radius: 15px;
+			margin-top: 10px;
+			margin-left: 15px;
+			color: #fff;
+			cursor: pointer;
+			border: none;
+			}
+
+#product-btn{
+			 width: 100px;
+			 background-color: #63B3ED;
+			 border-radius: 15px;
+			 border: none;
+			 margin-top: 5px;
+			 margin-left: 15px;
+			 color: #fff;
+			 cursor: pointer;
+			}
+
+#review-list-btn{
+				 width: 100px;
+				 height: 30px;
+				 bottom: 0;
+				 background-color: #63B3ED;
+				 border-radius: 15px;
+				 margin-top: 100px;
+				 color: #fff;
+				 cursor: pointer;
+				 border: none;
+				 }
+
+		
+.search_form{
+			 float: right;
+			}
+		  
+.input_box{
+			outline: none;
+			border-radius: 10px;
+			border: 1px solid skyblue;
+			margin-bottom: 10px;
+			}
+
+.table-search{
+		      position: absolute;
+			  bottom: 0;
+			  }
+
+.table-search-btn{
+				  border-radius: 10px;
+				  background-color: #fff;
+				  border: 1px solid skyblue;
+				  color: #6c757d;
+				  margin-bottom: 14px;
+				  width: 50px;
+				  }
+				  
+.table-search-btn:hover{
+						color: #fff;
+						background-color: skyblue;
+						}
+
+.saledetail-table{
+				  --bs-table-color: #67748e;
+				  --bs-table-bg: transparent;
+				  --bs-table-border-color: #e9ecef;
+				  --bs-table-accent-bg: transparent;
+				  --bs-table-striped-color: #67748e;
+				  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+				  --bs-table-active-color: #67748e;
+				  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+				  --bs-table-hover-color: #67748e;
+				  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+				  width: 100%;
+				  height: 400px;
+				  margin-bottom: 1rem;
+				  color: var(--bs-table-color);
+				  vertical-align: top;
+				  text-align: center;
+				  border-color: var(--bs-table-border-color);
+				  margin-bottom: 20px;
+				  }	
+
+
+#item_option input[type="radio"] {
+								   display: none;
+								 }
+
+#item_option label {
+					  display: inline-block;
+					  background-color: white;
+					  padding: 5px 20px;
+					  font-family: Arial;
+					  font-size: 16px;
+					  cursor: pointer;
+					  margin-right:14px;
+					  border:1px solid #ccc;
+					  color:#999;
+					  transition-duration:.4s;
+					  border-radius: 4px;
+					}
+.writeForm input[type="radio"] {
+								   display: none;
+								 }
+
+.radio-part {
+			  display: inline-block;
+			  background-color: white;
+			  padding: 5px 20px;
+			  font-family: Arial;
+			  font-size: 16px;
+			  cursor: pointer;
+			  margin-right:14px;
+			  border:1px solid #ccc;
+			  color:#999;
+			  transition-duration:.4s;
+			  border-radius: 4px;
+			 }
+
+
+.radio-part:hover {
+			       background-color: #f3f9ff;
+				   }
+
+.writeForm input[type="radio"]:checked+.radio-part {
+									          color:white;
+									          background-color: #63B3ED;
+										     }
+
+.ss{
+	font-size:12px;
+	color:#999;
+	}
+	
+
+#item_option label:hover {
+					      background-color: #f3f9ff;
+						 }
+
+#item_option input[type="radio"]:checked+label {
+												  color:white;
+												  background-color: #63B3ED;
+												}
+
+.it_tot_price-wrapper{
+					  color: #63B3ED;
+					  font-size: 30px;
+					  }
+					  
+.price-box{
+			text-align: right;
+		   }
+
+.sale-price{
+			color: #63B3ED;
+			text-align: left;
+			margin-left: 10px;
+			}
+
+.item-total-buttons{
+					text-align: right;
+					margin-top: 30px;
+
+				  	}
+.item-vi{
+		  width: 300px;
+		  height: 60px;
+		  font-size: 25px;
+		  background-color: #63B3ED;
+		  border: none;
+		  color: #fff;
+		  cursor: pointer;
+		  transition: background-color 0.5s;
+		  border-radius: 10px;
+		  }
+
+.item-vi:hover{
+				background-color: #329be7;
+			   }
+
+.item-de{
+		  width: 300px;
+		  height: 60px;
+		  font-size: 25px;
+		  background-color: #63B3ED;
+		  border: none;
+		  color: #fff;
+		  cursor: pointer;
+		  margin-left: 30px;
+		  transition: background-color 0.5s;
+		  border-radius: 10px;
+		 }
+
+.item-de:hover{
+				background-color: #329be7;
+			   }
+
+.insert-btn{
+			width: 100px;
+			float: left;
+			background-color: #63B3ED;
+			border-radius: 15px;
+			font-size: 17px;
+			margin-left: 15px;
+			margin-top: 5px;
+			color: #fff;
+			cursor: pointer;
+			border: none;
+			float: right;
+			}
+
+.update-btn{
+			width: 100px;
+			float: left;
+			background-color: #63B3ED;
+			border-radius: 15px;
+			margin-top: 10px;
+			margin-left: 15px;
+			font-size: 17px;
+			color: #fff;
+			cursor: pointer;
+			border: none;
+		    }
+		    
+.delete-btn{
+			width: 100px;
+			float: left;
+			background-color: #63B3ED;
+			border-radius: 15px;
+			margin-top: 10px;
+			margin-left: 15px;
+			font-size: 17px;
+			color: #fff;
+			cursor: pointer;
+			border: none;
+			}
+
+#payment-request-button{
+						width: 100px;
+						background-color: #63B3ED;
+						border-radius: 15px;
+						font-size: 17px;
+						margin-right: 15px;
+						margin-top: 5px;
+						color: #fff;
+						cursor: pointer;
+						border: none;
+						}
+
+@keyframes numberAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 숫자 애니메이션 클래스 */
+.number-animation {
+  					animation: numberAnimation 1s ease-in-out;
+				  }
+				  
+
+.no-search{
+			width: 100%;
+			text-align: center;
+			margin-top: 100px;
+		   }
+		   
+
+.history-container {
+	display:flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+.history-container h2 {
+    margin-right: 10px;
+  }
+
+.history-container form {
+    margin-right: 10px;
+  }
+  
+#purchaseHistory{
+			 width: 100px;
+			 background-color: #63B3ED;
+			 border-radius: 15px;
+			 border: none;
+			 margin-top: 5px;
+			 margin-left: 15px;
+			 color: #fff;
+			 cursor: pointer;
+			}  
+	  
+#rentalHistory{
+			 width: 100px;
+			 background-color: #63B3ED;
+			 border-radius: 15px;
+			 border: none;
+			 margin-top: 5px;
+			 margin-left: 15px;
+			 color: #fff;
+			 cursor: pointer;
+			}  
+	  
+#saleHistory{
+			 width: 100px;
+			 background-color: #63B3ED;
+			 border-radius: 15px;
+			 border: none;
+			 margin-top: 5px;
+			 margin-left: 15px;
+			 color: #fff;
+			 cursor: pointer;
+			}  
+	  
+#centerHistory{
+			 width: 100px;
+			 background-color: #63B3ED;
+			 border-radius: 15px;
+			 border: none;
+			 margin-top: 5px;
+			 margin-left: 15px;
+			 color: #fff;
+			 cursor: pointer;
+			}  
+	  
+#cartHistory{
+			 width: 100px;
+			 background-color: #63B3ED;
+			 border-radius: 15px;
+			 border: none;
+			 margin-top: 5px;
+			 margin-left: 15px;
+			 color: #fff;
+			 cursor: pointer;
+			}  
+	  
